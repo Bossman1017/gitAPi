@@ -18,3 +18,7 @@ api.post('/add', (req, res) => {
 	console.log(req.body);
 	res.send('It works!');
 });
+
+api.post('/add', (req, res) => {
+	console.log('Post request received');
+   });

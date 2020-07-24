@@ -137,7 +137,7 @@ function sendItemToAPI(item) {
   });
 
   req.addEventListener('error', () => {
-    console.log('Shit, something bad happened.');
+    console.log('Oops, something bad happened.');
     console.log(e);
   });
 }
