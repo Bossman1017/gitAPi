@@ -5,7 +5,7 @@ const mysql = require('mysql2');
 const connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
-	password: 'N$k28213',
+	password: 'yourpasswd',
 	database: 'todo'
    });
 
@@ -16,6 +16,8 @@ const connection = mysql.createConnection({
 	console.log(e);
    }
    
+console.log(connection);
+
 const api = express();
 api.use(express.static(__dirname + '/public'));
 api.use(bodyParser.json());
@@ -35,3 +37,5 @@ api.post('/add', (req, res) => {
 	 });
 	});
    });
+
+   
